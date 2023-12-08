@@ -1,0 +1,144 @@
+﻿{
+  "name": "IISJjcuТчРегВхода",
+  "modelName": "i-i-s-jjcu-тч-рег-входа",
+  "className": "ТчРегВхода",
+  "nameSpace": "IIS.Jjcu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "гость",
+      "relatedTo": "i-i-s-jjcu-гость",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должности",
+      "relatedTo": "i-i-s-jjcu-должности",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "картыДоступа",
+      "relatedTo": "i-i-s-jjcu-карты-доступа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-jjcu-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формаРегВхода",
+      "relatedTo": "i-i-s-jjcu-форма-рег-входа",
+      "inverse": "тчРегВхода"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТчРегВходаE",
+      "modelName": "i-i-s-jjcu-тч-рег-входа",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Гость",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Гость",
+          "name": "гость",
+          "relatedTo": "i-i-s-jjcu-гость",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-jjcu-сотрудник",
+          "inverse": null
+        },
+        {
+          "lookupValue": "КодКарты",
+          "lookupValueField": "кодКарты",
+          "relationName": "КартыДоступа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодКарты",
+              "caption": "Код карты",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Карты доступа",
+          "name": "картыДоступа",
+          "relatedTo": "i-i-s-jjcu-карты-доступа",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Должности",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Должности",
+          "name": "должности",
+          "relatedTo": "i-i-s-jjcu-должности",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

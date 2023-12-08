@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Комната",
+      "projection": "КомнатаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "КартыДоступа",
+      "projection": "КартыДоступаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Гость",
+      "projection": "ГостьL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Форма рег карт",
+  "name": "IISJjcuФормаРегКартE",
+  "className": "ФормаРегКартE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-форма-рег-карт",
+      "modelProjection": "ФормаРегКартE"
+    }
+  ]
+}

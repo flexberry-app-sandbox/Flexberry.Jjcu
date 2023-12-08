@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-jjcu-должности-e",
+  "editForm": "i-i-s-jjcu-должности-e",
+  "external": false,
+  "caption": "Должности",
+  "name": "IISJjcuДолжностиL",
+  "className": "ДолжностиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-должности",
+      "modelProjection": "ДолжностиL"
+    }
+  ]
+}

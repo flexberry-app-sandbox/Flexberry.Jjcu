@@ -1,0 +1,1 @@
+docker-compose -p jjcu up -d

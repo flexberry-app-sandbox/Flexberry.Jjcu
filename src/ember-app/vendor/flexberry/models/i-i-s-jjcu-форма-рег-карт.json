@@ -1,0 +1,180 @@
+﻿{
+  "name": "IISJjcuФормаРегКарт",
+  "modelName": "i-i-s-jjcu-форма-рег-карт",
+  "className": "ФормаРегКарт",
+  "nameSpace": "IIS.Jjcu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "гость",
+      "relatedTo": "i-i-s-jjcu-гость",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "картыДоступа",
+      "relatedTo": "i-i-s-jjcu-карты-доступа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "комната",
+      "relatedTo": "i-i-s-jjcu-комната",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормаРегКартE",
+      "modelName": "i-i-s-jjcu-форма-рег-карт",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Номер",
+          "lookupValueField": "номер",
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Комната",
+          "name": "комната",
+          "relatedTo": "i-i-s-jjcu-комната",
+          "inverse": null
+        },
+        {
+          "lookupValue": "КодКарты",
+          "lookupValueField": "кодКарты",
+          "relationName": "КартыДоступа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодКарты",
+              "caption": "Код карты",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Карты доступа",
+          "name": "картыДоступа",
+          "relatedTo": "i-i-s-jjcu-карты-доступа",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Гость",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Гость",
+          "name": "гость",
+          "relatedTo": "i-i-s-jjcu-гость",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормаРегКартL",
+      "modelName": "i-i-s-jjcu-форма-рег-карт",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "Номер",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер",
+          "name": "комната",
+          "relatedTo": "i-i-s-jjcu-комната",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КартыДоступа",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодКарты",
+              "caption": "Код карты",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Код карты",
+          "name": "картыДоступа",
+          "relatedTo": "i-i-s-jjcu-карты-доступа",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Гость",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "гость",
+          "relatedTo": "i-i-s-jjcu-гость",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

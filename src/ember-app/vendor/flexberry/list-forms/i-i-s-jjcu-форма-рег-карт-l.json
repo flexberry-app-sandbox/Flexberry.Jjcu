@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-jjcu-форма-рег-карт-e",
+  "editForm": "i-i-s-jjcu-форма-рег-карт-e",
+  "external": false,
+  "caption": "Форма рег карт",
+  "name": "IISJjcuФормаРегКартL",
+  "className": "ФормаРегКартL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-форма-рег-карт",
+      "modelProjection": "ФормаРегКартL"
+    }
+  ]
+}

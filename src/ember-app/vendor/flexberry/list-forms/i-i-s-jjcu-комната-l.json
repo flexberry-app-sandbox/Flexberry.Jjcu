@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-jjcu-комната-e",
+  "editForm": "i-i-s-jjcu-комната-e",
+  "external": false,
+  "caption": "Комната",
+  "name": "IISJjcuКомнатаL",
+  "className": "КомнатаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-комната",
+      "modelProjection": "КомнатаL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Карты доступа",
+  "name": "IISJjcuКартыДоступаE",
+  "className": "КартыДоступаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-карты-доступа",
+      "modelProjection": "КартыДоступаE"
+    }
+  ]
+}

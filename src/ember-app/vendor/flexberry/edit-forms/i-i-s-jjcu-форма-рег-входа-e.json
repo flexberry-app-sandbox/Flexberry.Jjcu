@@ -1,0 +1,55 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Комната",
+      "projection": "КомнатаL",
+      "detailModelName": null
+    },
+    {
+      "master": "гость",
+      "displayAttributeName": "фамилия",
+      "required": true,
+      "relationName": "ТчРегВхода.Гость",
+      "projection": "ГостьL",
+      "detailModelName": "i-i-s-jjcu-тч-рег-входа"
+    },
+    {
+      "master": "сотрудник",
+      "displayAttributeName": "фамилия",
+      "required": true,
+      "relationName": "ТчРегВхода.Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": "i-i-s-jjcu-тч-рег-входа"
+    },
+    {
+      "master": "картыДоступа",
+      "displayAttributeName": "кодКарты",
+      "required": true,
+      "relationName": "ТчРегВхода.КартыДоступа",
+      "projection": "КартыДоступаL",
+      "detailModelName": "i-i-s-jjcu-тч-рег-входа"
+    },
+    {
+      "master": "должности",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "ТчРегВхода.Должности",
+      "projection": "ДолжностиL",
+      "detailModelName": "i-i-s-jjcu-тч-рег-входа"
+    }
+  ],
+  "external": false,
+  "caption": "Форма рег входа",
+  "name": "IISJjcuФормаРегВходаE",
+  "className": "ФормаРегВходаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-jjcu-форма-рег-входа",
+      "modelProjection": "ФормаРегВходаE"
+    }
+  ]
+}

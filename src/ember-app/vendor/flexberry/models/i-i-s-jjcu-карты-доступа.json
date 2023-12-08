@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISJjcuКартыДоступа",
+  "modelName": "i-i-s-jjcu-карты-доступа",
+  "className": "КартыДоступа",
+  "nameSpace": "IIS.Jjcu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодКарты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типКарты",
+      "type": "i-i-s-jjcu-виды-карт",
+      "flexberryType": "ВидыКарт",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КартыДоступаE",
+      "modelName": "i-i-s-jjcu-карты-доступа",
+      "attrs": [
+        {
+          "name": "кодКарты",
+          "caption": "Код карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКарты",
+          "caption": "Тип карты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КартыДоступаL",
+      "modelName": "i-i-s-jjcu-карты-доступа",
+      "attrs": [
+        {
+          "name": "кодКарты",
+          "caption": "Код карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКарты",
+          "caption": "Тип карты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
